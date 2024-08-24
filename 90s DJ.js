@@ -1,6 +1,6 @@
 let band = Math.ceil(Math.random() * 6);
 
-//console.log(band);
+console.log(band);
 
 if (band === 1) {
     console.log('Pearl Jam');
@@ -13,5 +13,5 @@ if (band === 1) {
 } else if (band === 5) {
     console.log('Stone Temple Pilots');
 } else {
-    console.log('The Wallflowers')
+    console.log('The Wallflowers');
 }
