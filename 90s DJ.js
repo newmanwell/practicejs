@@ -1,6 +1,6 @@
 let band = Math.ceil(Math.random() * 6);
 
-console.log(band);
+//console.log(band);
 
 if (band === 1) {
     console.log('Pearl Jam');
