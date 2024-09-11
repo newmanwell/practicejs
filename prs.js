@@ -1,5 +1,7 @@
 console.log("Hello and Welcome to the Abyss!");
 
+//section for human choice
+
 const getUserChoice = (userInput) => {
     userInput = userInput.toLowerCase();
     if (userInput === "rock") {
@@ -12,7 +14,7 @@ const getUserChoice = (userInput) => {
   };
   
   //console.log(getUserChoice("rock"));
-  
+  //section for computer choice
   const getComputerChoice = () => {
     let compRandom = Math.floor(Math.random() * 3);
     if (compRandom === 0) {
@@ -25,7 +27,8 @@ const getUserChoice = (userInput) => {
   };
   
   //console.log(getComputerChoice());
-  
+  //section for determining the winner
+
   function determineWinner(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
       return "This game was a tie";
@@ -52,6 +55,8 @@ const getUserChoice = (userInput) => {
       }
     }
   }
+  
+  //section for logging the results
   
   function playGame() {
     var userChoice = getUserChoice('Scissors');
