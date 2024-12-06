@@ -1,11 +1,17 @@
+//getting the HTML IDs
 const band = document.getElementById('bandBtn');
 const name = document.getElementById('bandName');
 const play = document.getElementById('instrument');
+const opener = document.getElementById('opens');
 
 band.onclick = function() {
+    // getting random!
     let first = Math.ceil(Math.random() * 7);
     let second = Math.ceil(Math.random() * 7);
     let instrument = Math.ceil(Math.random() * 6);
+    let openers = Math.ceil(Math.random() * 6);
+
+    // adjective section of the band name
     if (first === 1) {
         first = 'Inspired';
     } else if (first === 2) {
@@ -22,6 +28,7 @@ band.onclick = function() {
         first = 'Bonerific'
     }
 
+    // noun scetion of the band name
     if (second === 1) {
         second = 'Squirrels';
     } else if (second === 2) {
@@ -38,6 +45,7 @@ band.onclick = function() {
         second = 'Mastiffs'
     }
 
+    // position in band section (also getting better at switch)
     switch (instrument) {
         case 1:
             instrument = 'Lead Singer';
@@ -56,13 +64,38 @@ band.onclick = function() {
             break;
         case 6:
             instrument = 'Tambourine'
+            break;
     }
 
+    // who we are opening for
+    switch (openers) {
+        case 1:
+            openers = 'Guns n Roses';
+            break;
+        case 2:
+            openers = 'AC/DC';
+            break;
+        case 3:
+            openers = 'Tupac';
+            break;
+        case 4:
+            openers = 'Imagine Dragons';
+            break;
+        case 5:
+            openers = 'Nickleback';
+            break;
+        case 6:
+            openers = 'Rolling Stones'
+            break;
+    }
 
+    // pushing strings to bandname.html
     name.innerHTML = `${first} ${second}`;
-    play.innerHTML = `${instrument}`
+    play.innerHTML = `${instrument}`;
+    opener.innerHTML = `${openers}`;
     console.log(`${first} ${second}`);
     console.log(`${instrument}`);
+    console.log(`${openers}`);
 }
 
 //generator();
