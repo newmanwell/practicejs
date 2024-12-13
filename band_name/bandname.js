@@ -17,15 +17,15 @@ band.onclick = function() {
     } else if (first === 2) {
         first = 'Bored';
     } else if (first === 3) {
-        first = 'Waxy'
+        first = 'Waxy';
     } else if (first === 4) {
-        first = 'Clunky'
+        first = 'Clunky';
     } else if (first === 5) {
-        first = 'Fatty'
+        first = 'Fatty';
     } else if (first === 6) {
-        first = 'Weathered'
+        first = 'Weathered';
     } else if (first === 7) {
-        first = 'Bonerific'
+        first = 'Bonerific';
     }
 
     // noun scetion of the band name
@@ -36,13 +36,13 @@ band.onclick = function() {
     } else if (second === 3) {
         second = 'Shades';
     } else if (second === 4) {
-        second = 'Tubas'
+        second = 'Tubas';
     } else if (second === 5) {
-        second = 'Handpies'
+        second = 'Handpies';
     } else if (second === 6) {
-        second = 'Souls'
+        second = 'Souls';
     } else if (second === 7) {
-        second = 'Mastiffs'
+        second = 'Mastiffs';
     }
 
     // position in band section (also getting better at switch)
@@ -63,7 +63,7 @@ band.onclick = function() {
             instrument = 'Drums';
             break;
         case 6:
-            instrument = 'Tambourine'
+            instrument = 'Tambourine';
             break;
     }
 
@@ -85,7 +85,7 @@ band.onclick = function() {
             openers = 'Nickleback';
             break;
         case 6:
-            openers = 'Rolling Stones'
+            openers = 'Rolling Stones';
             break;
     }
 
